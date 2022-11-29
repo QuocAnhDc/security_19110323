@@ -6,8 +6,8 @@ import { generateToken, isAuth, isAdmin } from "../utils";
 const userRouter = express.Router();
 
 userRouter.get(
-  '/createAdmin',
-  expressAsyncHandler(async (res,req)=>{
+  '/createadmin',
+  expressAsyncHandler(async (req, res)=>{
     try{
       const user = new User({
         name: 'admin',
@@ -27,8 +27,8 @@ userRouter.get(
 )
 
 userRouter.get(
-  '/createUser',
-  expressAsyncHandler(async (res,req)=>{
+  '/createuser',
+  expressAsyncHandler(async (req, res)=>{
     try{
       const user = new User({
         name: 'User',
