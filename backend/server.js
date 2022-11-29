@@ -6,7 +6,7 @@ import userRouter from "./routers/userRouter.js";
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(process.env.MONGODB_URI || `mongodb://127.0.0.1:27017/security`)
   .then(() => {
     console.log('connected to db');
   })
