@@ -1,0 +1,2 @@
+MONGODB_URL = your connect url mongodb
+JWT_SECRET = your jwt sercet
